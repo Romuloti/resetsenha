@@ -1,0 +1,202 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower'); /* importar fonte, últimas notícias*/
+
+body{
+	font-family: 'Roboto', sans-serif;                                                          /*  1 etapa */
+}
+/* grid 960px */                                                            
+.linha{                       /* Linhas formato classe, espaço entre linhas */                            /*  2 etapa */            
+	width: 960px;             /*  Largura da página grid 960px    */
+	margin: 0 auto;           /*  margem para centralizar no navegador     */
+	overflow: auto;           /*  Ajudar a gerenciar o que passar fora da linha     */
+	padding: 5px 0;           /*  Espaçamento na parte de cima direita debaixo e esquerda     */
+}
+.coluna{                      /*  Configurar coluna */                                                     /*  3 etapa */
+	padding: 0 10px;          /*  Espaçamento entre colunas */
+	float: left;              /*  Todas as colunas irão flutuar a esquerda para não empilhar      */
+}
+.col1{                                                /*  Tamanho de cada uma das colunas     */              /*  4 etapa */
+	width: 60px;                                       /*  largura 60px   */                 
+}
+.col2{                             /*  Tamanho de cada uma das colunas     */
+	width: 140px;                  /*  largura 60 + 80 = 140px      */
+}
+.col3{
+	width: 210px;                                           /*  largura 140 + 80 = 220      */
+}
+.col4{
+	width: 300px;               /*  largura 220 + 80 = 380      */
+}
+.col5{
+	width: 380px;
+}
+.col6{
+	width: 460px;
+}
+.col7{
+	width: 540px;
+}
+.col8{
+	width: 620px;
+}
+.col9{
+	width: 700px;
+}
+.col10{
+	width: 780px;
+}
+.col11{
+	width: 860px;
+}
+.col2{
+	width: 940px;                                 /*  largura 940 + 10 + 10 = 960      */
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 10px;
+	top: 0px;
+	transition: background-color 2s;                    /* acessar o site www.prefixr.com  / compatibilidade com outros browser para o modo transition colocar o transition: background-color 2s;  */
+	-webkit-transition: background-color 2s;
+	-moz-transition: background-color 2s;
+	-ms-transition: background-color 2s;
+	-o-transition: background-color 2s;
+}
+nav.ok{
+	position: absolute;
+	margin: 20px;
+	top: -62px;
+	text-decoration: none;
+}
+
+
+
+
+nav ul li:hover {                   /*  Quando o mouse passar por cima alterar a cor   */ 
+	background-color: #606060;
+	
+
+}
+nav.ok a{
+	text-decoration: none;            /*  não ter nenhum underline, não ter configuração   */ 
+	color: #000000;                  /*  Cor    */
+
+
+
+}
+nav.ok a:hover {                /*  não ter nenhum underline, não ter configuração   */ 
+	color: #ffffff;           /*  Cor     */
+	
+}
+h3{
+	font-family: 'Indie Flower', cursive;
+}
+
+a.botao, input.batao{                                     /*  classe botões a ou imput com classe .botao    */
+	background: #1f3c58;                   /*  cor    */
+	padding: 5px 10px;                      /* margem     */
+	border-radius: 3px;                     /* arrendondar os cantos do botão   */
+	color: #ebebeb;                          /*  Cor     */
+	cursor: pointer;                         /* curso ficar com a mãozinha     */
+	margin: 5px 0;                            /*   Margem direita esqueda    */
+	display: inline-block;                      /*   Mostrar em linha e em bloco    */
+	border: none;                                 /*  Não tem bordar nos botões    */
+}
+
+a.botao:hover, input.batao:hover{            /*  Efeito de quando o mouse estiver sobre o botão     */
+	background: #315e8a;                     /*  Cor    */
+	text-decoration: none;                   /*  Não ficar subilinhado     */
+}
+
+.header{                        /*  Div header, por fora da linha topo e menu   */
+	background: #dee3e6;         /*  Cor cinza   */
+}
+
+h1.logo{                       /*  H1 logo estilizar h1  */      
+	font-weight: 300;          /*  peso da fonte, 300 para não fucar muito negrito  */
+	color: #315e8a;            /*  Cor da letra   */
+	letter-spacing: -2px;      /*  Espaço entre letras   */
+}
+.conteudo-extra{                  /*  classe .conteudo-extra  */
+	background: #f1f2ea;          /*  Cor Cinza no conteudo extra cinza claro  */
+}
+
+
+.footer{                               /*  classe .footer   */
+	background: #1f3c58;              /*  Cor do fundo   */
+	color: #ebebeb;                   /*  Cor da letra   */
+	padding: 20px 0;                  /*  margem interna   */
+	text-align: center;               /*  centralizar o texto  */
+	font-weight: 100;                 /*  fonte largura    */
+}
+.menu{                                 /* Topo do site (Menu)    */                  
+	text-transform: uppercase;         /* Todas as letras maisculas   */ 
+	text-align: right;                  /* Texto ficar do lado direito    */ 
+	margin-top: 25px;                  /* Margem top, colar o menu na barra de cima    */ 
+}
+.menu li a{                             /*  links do menu   */ 
+	padding: 5px 10px;                  /* margem  */ 
+	border-radius: 3px;                  /*  arredondar os cantos do botão  */ 
+}
+.menu li a:hover{                        /* quando o mouse estiver sobre os itens de menu    */ 
+	text-decoration: none;               /*  não ter nenhum underline   */ 
+	background: #1f3c58;                 /*  Cor fundo   */ 
+	color: #ebebeb;                       /* Cor letra  */ 
+}
+ul.noticias li{                   /* dentro de uma ul com a .classe noticias estilizar as li  */              
+	clear: both;                  /*  Limpar flutuações */ 
+	display: block;               /*  mostrar em bloco  */ 
+	overflow: hidden;             /*  Ocultar o conteúdo excedente */ 
+	margin-bottom: 20px;           /* margem na parte de baixo de cada li de 20px */ 
+}
+ul.noticias li img{     /* imagem que estiver de li que estiver dentro de uma classe noticias  */ 
+	width: 70px;                     /* largura de 70px  */ 
+	height: auto;                   /* Altura automatica */ 
+	margin-right: 10px;               /*margem do lado direito */ 
+	float: left;                      /* Flutuar para o lado esquerdo  */ 
+}
+ul.noticias li h4{                     /* Título da noticias  */ 
+	margin: -2px 0 5px 0;              /* margem superior direita baixo esquerda  */ 
+	font-weight: 500;                 /* fonte peso do negrito */ 
+}
+ul.noticias li p{                        /* p formatação para p/li/noticias  */ 
+	margin: 5px 0;                        /* margem cima e baixo   */ 
+	font-weight: 300;                    /* Fonte peso do negrito  */ 
+}
+ul.noticias li p a{                    /*  Link paragrafo li .noticias */ 
+	font-weight: 500;                  /* Fonte peso do negrito   */ 
+
+}
+ul li a{
+	text-decoration: none;      /*  não ter nenhum underline, não ter configuração   */ 
+
+}
+
+
+
+/*formulário*/
+/*
+
+.contato label{
+	display: block;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.contato input, .contato textarea{
+	display: block;
+	margin-bottom: 15px;
+	padding: 5px 2px;
+	width: 96%;
+}
+
+.contato textarea{
+	height: 150px;
+}
+.contato input.botao{
+	width: auto;
+}
+*/
